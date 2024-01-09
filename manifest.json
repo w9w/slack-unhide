@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Slack un-hide",
+  "version": "1.0",
+  "description": "This extension automatically modifies class values for div tags on app.slack.com",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://app.slack.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
